@@ -7,8 +7,8 @@ const app = express();
 
 app.get("/", function(req, res) {
 
-
-  const url = "https://api.openweathermap.org/data/2.5/weather?q=Montreal&appid=c01b0b990bbd85fdc3d37e93d26d3112&units=metric";
+  const city = "Karachi"
+  const url = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=c01b0b990bbd85fdc3d37e93d26d3112&units=metric";
 
   https.get(url, function(response){
     console.log(response.statusCode);
@@ -21,7 +21,7 @@ app.get("/", function(req, res) {
       const imageURL = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
 
 
-      res.write("<h1>The Temperature in Montreal is " + temp + " degrees celsius.</h1>");
+      res.write("<h1>The Temperature in " + city + " is " + temp + " degrees celsius.</h1>");
       res.write("<p><br> The weather is " + discription + "</p>");
       res.write("<img src='"+ imageURL+"'>")
       res.send();
