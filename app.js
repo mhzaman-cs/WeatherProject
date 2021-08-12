@@ -7,7 +7,7 @@ const app = express();
 
 app.get("/", function(req, res) {
 
-  const city = "Karachi"
+  const city = "Montreal"
   const url = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=c01b0b990bbd85fdc3d37e93d26d3112&units=metric";
 
   https.get(url, function(response){
