@@ -1,14 +1,79 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Weather App</title>
-  </head>
-  <body>
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Weather App</title>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Google Fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;400;500;700&family=Sora:wght@200;300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/eb8ca7b138.js" crossorigin="anonymous"></script>
+
+  <!-- Material Design Webfont CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.9.95/css/materialdesignicons.css" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><span style="font-family: 'Sora', sans-serif; font-weight: 700;">Weather</span><span style="font-family: 'Epilogue', sans-serif; font-weight: 500;">City</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">City List</a>
+        </li>
+      </ul>
+      <form class="form-inline" action="/" method="post">
+        <input class="form-control" type="text" name="cityName" placeholder="Search by City">
+        <button class="btn btn-outline-success my-2 my-sm-0 mr-lg-2" type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </nav>
+
+
+  <h1 class="title">Search Accurate Real Time Weather Conditions</h1>
+
+
+  <div class="container" id="searchBox">
     <form action="/" method="post">
-    <label for="cityInput">City Name: </label>
-    <input id="cityInput" type="text" name="cityName">
-    <button type="submit">Search City</button>
-  </form>
-  </body>
+      <label for="cityInput">
+        <h1>City Name</h1>
+      </label>
+      <input class="" type="text" name="cityName" placeholder="Search by City">
+      <button id="searchBarNav" type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+
+  <img src="good layout.JPG" alt="example image">
+  <img src="good layout.JPG" alt="example image">
+  <img src="good layout.JPG" alt="example image">
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/index.js" type="text/javascript"></script>
+</body>
+
 </html>
