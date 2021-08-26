@@ -53,10 +53,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#buttom">Home</a>
+          <a class="nav-link" href="#home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">City List</a>
+          <a class="nav-link" href="#largeSearch">Discover the Weather</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Testimonial">Testimonials</a>
         </li>
       </ul>
       <form class="form-inline" action="/" method="post">
@@ -68,7 +71,7 @@
 
   <!-- Carousel slide with weather and details -->
 
-  <div class="general-info fade-in">
+  <div id="home" class="general-info fade-in">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -102,7 +105,7 @@
 
   <!-- Coustomer reviews -->
 
-  <div class="coustomerReviews container-fluid px-3 px-sm-5 my-5 text-center">
+  <div id="Testimonial" class="coustomerReviews container-fluid px-3 px-sm-5 my-5 text-center">
     <h1 class="titleReviews">Our Users Have Never Been More Satisfied</h1>
     <h4 class="mb-5 font-weight-bold">What Our Clients Say</h4>
     <div class="owl-carousel owl-theme">
@@ -139,19 +142,20 @@
 
   <!-- Large Search Section -->
 
-  <div class="largeSection">
-    <form class="form-inline" action="/" method="post">
-      <h4>Seach by City</h4>
-      <input class="form-control" type="text" name="cityName" placeholder="Search by City">
-      <button class="btn btn-outline-success my-2 my-sm-0 mr-lg-2" type="submit"><i class="fa fa-search"></i></button>
+  <div id="largeSearch" class="largeSection">
+    <h4 class="searchTitle">Discover the Weather in any City!</h4>
+    <form class="largeSearch" action="/" method="post">
+      <div class="form-inline justify-content-center text-center">
+        <button type="button" class="btn btn-outline-primary b1">°C</button><button type="button" class="btn btn-outline-primary b2">°F</button><button type="button" class="btn btn-outline-primary b3">°K</button>
+      </div>
+      <div class="form-inline justify-content-center text-center">
+        <input class="form-control largeInput" type="text" name="cityName" placeholder="Search by City"><button class="btn btn-outline-success my-2 my-sm-0 mr-lg-2 largeButton" type="submit"><i class="fa fa-search"></i></button>
+      </div>
     </form>
   </div>
 
+  <!-- Current Weather -->
 
-
-  <img src="good layout.JPG" alt="example image">
-  <img src="good layout.JPG" alt="example image">
-  <img id="buttom" src="good layout.JPG" alt="example image">
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

@@ -110,6 +110,7 @@ button:focus {
 
 .btn-outline-success:hover {
   background-color: #3282B8 !important;
+  color: #1B262C;
 }
 
 .btn {
@@ -297,8 +298,44 @@ div.owl-nav{
 .largeSection {
   background-color: #3282B8;
   height: 15rem;
+  text-align: center;
+  padding: 1rem auto;
 }
 
-h4 {
-  
+.searchTitle {
+  color: #0F4C75;
+  padding: 3rem 0;
+  margin: 0 auto;
+}
+
+.largeSearch {
+  width: 100% !important;
+  border-width: 1 !important;
+  display:inline;
+  text-align: center;
+}
+
+.largeInput, .largeInput:hover{
+  width: 65% !important;
+  border-width: 1px;
+  border-right-width: 0px;
+}
+
+.largeButton{
+  border: 1px solid #0F4C75 !important;
+}
+
+button.btn.btn-outline-primary{
+  color: #0F4C75;
+  border-color: #0F4C75;
+}
+
+button.btn.btn-outline-primary.b2{
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+button.btn.btn-outline-primary:hover, button.btn.btn-outline-primary:focus{
+  color: #3282B8;
+  background-color: #0F4C75;
 }
