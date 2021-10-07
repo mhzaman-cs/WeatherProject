@@ -291,7 +291,8 @@ div.owl-nav {
 .largeSection {
   background-color: #3282B8;
   text-align: center;
-  padding: 1rem auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .searchTitle {
@@ -307,7 +308,7 @@ div.owl-nav {
   text-align: center;
 }
 
-.largeInput, .largeInput:hover {
+.largeInput, .largeInput:hover, .largeInput:focus {
   width: 65% !important;
   border-width: 1px;
   border-right-width: 0px;
@@ -333,7 +334,7 @@ button.btn.btn-outline-primary:hover, button.btn.btn-outline-primary:focus {
 }
 
 .unitsButtons {
-  margin-inline: 6rem;
+  margin-inline: 8rem;
   margin-bottom: 2rem;
 }
 

@@ -63,7 +63,7 @@
         </li>
       </ul>
       <form class="form-inline" action="/" method="post">
-        <input class="form-control" type="text" name="cityName" placeholder="Search by City">
+        <input class="form-control" type="text" name="cityName" placeholder="Search by City" autocomplete="off">
         <button class="btn btn-outline-success my-2 my-sm-0 mr-lg-2" type="submit"><i class="fa fa-search"></i></button>
       </form>
     </div>
@@ -151,13 +151,37 @@
       </div>
       <br>
       <div class="form-inline justify-content-center text-center">
-        <input class="form-control largeInput" type="text" name="cityName" placeholder="Search by City"><button class="btn btn-outline-success my-2 my-sm-0 mr-lg-2 largeButton" type="submit"><i class="fa fa-search"></i></button>
+        <input class="form-control largeInput" type="text" name="cityName" placeholder="Search by City" autocomplete="off"><button class="btn btn-outline-success my-2 my-sm-0 mr-lg-2 largeButton" type="submit"><i class="fa fa-search"></i></button>
       </div>
     </form>
   </div>
 
   <!-- Current Weather -->
-
+  <div class="">
+    <div class="currentWeather">
+      <div class="app-title">
+        <p>Weather</p>
+      </div>
+      <div class="notification"> </div>
+      <div class="weather-container">
+        <div class="weather-icon">
+          <img src="icons/unknown.png" alt="Not Found">
+        </div>
+        <div class="temperature-value">
+          <p>- °<span>C</span></p>
+        </div>
+        <div class="temperature-description">
+          <p> - </p>
+        </div>
+        <div class="location">
+          <p>-</p>
+        </div>
+      </div>
+      <div class="lower-title">
+        <p>Weather</p>
+      </div>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
